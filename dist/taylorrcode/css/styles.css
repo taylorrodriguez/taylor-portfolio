@@ -347,9 +347,9 @@ img[src*="icon"] {
   background-size: cover;
 }
 .moviedb {
-    background-image: url(../img/movie.jpg);
-    background-size: cover;
-    background-position: top;
+  background-image: url(../img/movie.jpg);
+  background-size: cover;
+  background-position: top;
 }
 .bestfriend-breeds {
   background-image: url(../img/dog-breeds.jpg);
