@@ -1,6 +1,6 @@
 # taylor-portfolio
 ## About
-Welcome to my custom portfolio website for my personal projects! This was created using HTML, CSS, vanilla JavaScript.
+Welcome to my custom portfolio website for my personal projects! This was created using HTML, CSS, vanilla JavaScript, and Adobe Illustrator.
 
 ## Features
 - A contact form that posts messages to a realtime database (Firebase Database)
