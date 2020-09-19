@@ -296,6 +296,14 @@ img[src*="arrow"] {
   color: #20b2aa;
   transition: all 0.3s ease-in-out;
 }
+#about {
+position: relative;
+}
+.cube-header {
+  position: absolute;
+  bottom:-20px;
+  z-index: -1;
+}
 .about-content {
   justify-content: space-evenly;
   font-size: 3.5vw;
@@ -350,6 +358,8 @@ img[src*="icon"] {
  text-decoration: none;
 }
 #projects {
+  position: relative;
+  padding-bottom: 50px;
   background-color: #d8d8d8;
 }
 .projects-container {
@@ -430,6 +440,10 @@ img[src*="icon"] {
 .project-btns input:hover {
   background-color: #20b2aa;
   border-color: #20b2aa;
+}
+.envelope-header {
+position: absolute;
+bottom: -2px;
 }
 #contact span {
   color: #20b2aa;
