@@ -13,33 +13,27 @@ body {
   width: 20px;
 }
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   background-color: white;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background:lightseagreen ; 
+  background: lightseagreen;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #303d46; 
-}
-canvas {
-  position: absolute;
-  z-index: -1;
-  max-height: 100vh;
-  max-width: 100vw;
+  background: #303d46;
 }
 h3 {
   font-size: 7vw;
-  margin:10px;
+  margin: 10px;
 }
 .header-container {
-  margin:80px 0 25px 0;
+  margin: 80px 0 25px 0;
 }
-.title-bar{
+.title-bar {
   height: 3px;
-  width:80px;
+  width: 80px;
   background-color: #000;
 }
 .last-title-bar {
@@ -80,7 +74,6 @@ form {
 .header-container,
 #about,
 #contact,
-#home,
 #home button,
 #projects,
 .about-content,
@@ -96,7 +89,6 @@ form {
 .header-container,
 #about,
 #contact,
-#home,
 #home button,
 #projects,
 .desk,
@@ -110,7 +102,6 @@ form {
 }
 #about,
 #contact,
-#home,
 #home button,
 #projects,
 .desk,
@@ -155,8 +146,35 @@ h4 {
   font-size: 25px;
 }
 #home {
-  background: linear-gradient(#182025ce, transparent);
+  background: linear-gradient(to top, #182025ce, transparent);
   height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+#home button,
+.greeting {
+  margin: 10px 50px 5px 50px;
+}
+.sub-text-greeting {
+  color: lightseagreen;
+  font-size: 3vw;
+  margin: 5px 50px 25px 50px;
+}
+#particles-js {
+  position: absolute;
+  background-color: #182025;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#particles-js canvas {
+  position: relative;
+}
+.T-logo {
+  display: none;
+  position: absolute;
+  z-index: -1;
 }
 img[src*="avatar"] {
   position: absolute;
@@ -165,9 +183,10 @@ img[src*="avatar"] {
   top: 0;
 }
 .greeting {
-  font-size: 5vw;
+  font-size: 9vw;
 }
 .name {
+  margin: auto;
   color: #27e0d7;
 }
 #home button,
@@ -176,9 +195,11 @@ img[src*="avatar"] {
   background-color: transparent;
   border: solid 0.5vw #fff;
   padding: 10px 15px;
-  margin: 30px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+.form-btn {
+  margin: 30px;
 }
 #home button:hover,
 .form-btn:hover {
@@ -297,11 +318,11 @@ img[src*="arrow"] {
   transition: all 0.3s ease-in-out;
 }
 #about {
-position: relative;
+  position: relative;
 }
 .cube-header {
   position: absolute;
-  bottom:-20px;
+  bottom: -20px;
   z-index: -1;
 }
 .about-content {
@@ -354,8 +375,8 @@ img[src*="icon"] {
   padding: 10px;
 }
 .skills ul li a {
- color:#20b2aa;
- text-decoration: none;
+  color: #20b2aa;
+  text-decoration: none;
 }
 #projects {
   position: relative;
@@ -442,8 +463,8 @@ img[src*="icon"] {
   border-color: #20b2aa;
 }
 .envelope-header {
-position: absolute;
-bottom: -2px;
+  position: absolute;
+  bottom: -2px;
 }
 #contact span {
   color: #20b2aa;
@@ -517,6 +538,12 @@ bottom: -2px;
     width: 400px;
     top: -100px;
   }
+  .greeting {
+    font-size: 54px;
+  }
+  .sub-text-greeting {
+    font-size: 18px;
+  }
   .desk {
     justify-content: flex-start;
   }
@@ -584,6 +611,13 @@ bottom: -2px;
     height: 180px;
     width: 180px;
   }
+  .T-logo {
+    display: block;
+    height: 50%;
+    width: 50%;
+    top: 150px;
+    right: 0px;
+  }
   .skills {
     justify-content: space-around;
     width: 768px;
@@ -600,16 +634,32 @@ bottom: -2px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .greeting {
-    font-size: 49.6px;
-  }
   img[src*="icon"] {
     height: 200px;
     width: 200px;
   }
+  #home {
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+  #home button,
+  .greeting {
+    margin: 30px 100px 20px 100px;
+  }
+  .sub-text-greeting {
+    margin: 0px 100px 20px 100px;
+  }
+  .T-logo {
+    display: block;
+    height: 70%;
+    width: 70%;
+    top: 120px;
+    right: -120px;
+  }
   .title-bar {
     height: 4px;
-    width:100px;
+    width: 100px;
   }
   .skills div h4 {
     padding: 29.76px 0;

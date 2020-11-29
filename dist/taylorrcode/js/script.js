@@ -6,12 +6,12 @@ const navListItems = document.querySelectorAll(".nav ul li");
 const navIcon = document.querySelector(".nav-icon");
 
 const sticky = desk.offsetTop; // for sticky nav
-const stickyNav = nav.offsetTop;
+const stickyNav = nav.offsetHeight;
 
 //Main button link and animates the arrow
 
 homeButton.addEventListener("click", () => {
-  location.href = "#about";
+  location.href = "#projects";
 });
 homeButton.addEventListener("mouseover", () => {
   arrow.style.transform = "rotate(90deg)";
@@ -77,25 +77,6 @@ navIcon.addEventListener("click", () => {
     navIcon.children[2].classList.remove("new-nav3");
   }
 });
-
-//Animates the flying boy on landing page
-
-const boy = document.querySelector("img[src*='avatar']");
-
-let imgArray = [
-  "./img/portfolio-avatar.gif",
-  "./img/portfolio-avatar2.gif",
-  "./img/portfolio-avatar3.gif",
-];
-
-let i = 0;
-setInterval(function switchImage() {
-  boy.setAttribute("src", imgArray[i]);
-  i++;
-  if (i == imgArray.length) {
-    i = 0;
-  }
-}, 500);
 
 //Animates the about me pixelated icon
 

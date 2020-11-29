@@ -23,12 +23,16 @@
       <!--MAIN -->
 
       <section id="home" class="grid-item flex">
-        <img src="img/portfolio-avatar.gif" alt="flying boy" />
+        <div id="particles-js"></div>
+        <img src="img/T.svg" class="T-logo">
+        
+        <!-- <img src="img/portfolio-avatar.gif" alt="flying boy" /> -->
 
         <span class="greeting">
-          Hello, I'm <span class="name">Taylor Rodriguez</span>.<br />
-          I'm a front-end web developer.
+          Hi,<br/> I'm <span class="name">Taylor</span>,<br />
+          web developer.
         </span>
+        <span class="sub-text-greeting">Front End Developer</span>
         <button class="flex">
           View my work<img src="img/arrow.svg" alt="arrow" />
         </button>
@@ -282,8 +286,14 @@
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
-    <script src="js/animation.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script src="js/animation.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js','particles.json', function(){
+        console.log('pareticles.json loaded');
+      });
+    </script>
 
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
