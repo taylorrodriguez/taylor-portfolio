@@ -78,22 +78,7 @@ navIcon.addEventListener("click", () => {
   }
 });
 
-//Animates the about me pixelated icon
-
-const icon = document.querySelector("img[src*='icon']");
-
-let iconArray = ["./img/about-icon.gif", "./img/about-icon2.gif"];
-
-let j = 0;
-setInterval(function switchIcon() {
-  icon.setAttribute("src", iconArray[j]);
-  j++;
-  if (j == iconArray.length) {
-    j = 0;
-  }
-}, 1500);
-
-//social links in footer hover
+//social links in hover
 
 const socialLinks = document.querySelectorAll(".link-holder svg");
 console.log(socialLinks);
