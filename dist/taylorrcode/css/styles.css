@@ -8,7 +8,6 @@ html {
 body {
   margin: 0;
 }
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -25,7 +24,7 @@ body {
   background: #303d46;
 }
 h3 {
-  font-size: 7vw;
+  font-size: 6vw;
   margin: 10px;
 }
 .header-container {
@@ -157,6 +156,7 @@ h4 {
   margin: 10px 50px 5px 50px;
 }
 .sub-text-greeting {
+  font-family: "Roboto", sans-serif;
   color: lightseagreen;
   font-size: 3vw;
   margin: 5px 50px 25px 50px;
@@ -215,7 +215,7 @@ img[src*="arrow"] {
   transition: all 0.3s ease-in-out;
 }
 .desk {
-  justify-content: flex-end;
+  justify-content: space-between;
   position: absolute;
   top: 100vh;
   text-align: left;
@@ -226,6 +226,7 @@ img[src*="arrow"] {
 }
 .nav-icon {
   height: 40px;
+  margin-right: 12px;
 }
 .nav-icon:hover {
   cursor: pointer;
@@ -293,7 +294,7 @@ img[src*="arrow"] {
   padding: 0;
 }
 .desk-list {
-  margin-left: 50px;
+  margin-left: 80px;
 }
 .desk ul {
   transition: all 0.3s ease-out;
@@ -318,7 +319,22 @@ img[src*="arrow"] {
   transition: all 0.3s ease-in-out;
 }
 #about {
+  justify-content: space-evenly;
   position: relative;
+}
+.me {
+  background-color: rgb(34, 46, 54);
+  color: white;
+  border-radius: 8px;
+  padding: 30px 0;
+}
+.me-pic {
+  height: 200px;
+  width: 200px;
+  background-image: url(../img/me.jpeg);
+  background-size: cover;
+  border-radius: 50%;
+  transform: rotate(4deg);
 }
 .cube-header {
   position: absolute;
@@ -326,15 +342,8 @@ img[src*="arrow"] {
   z-index: -1;
 }
 .about-content {
-  justify-content: space-evenly;
+  width: 100%;
   font-size: 3.5vw;
-}
-
-img[src*="icon"] {
-  padding: 30px;
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
 }
 .me span {
   color: #105551;
@@ -342,7 +351,8 @@ img[src*="icon"] {
   font-weight: bolder;
 }
 .me p {
-  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
   text-align: center;
   width: 85vw;
 }
@@ -352,14 +362,14 @@ img[src*="icon"] {
 }
 .skills {
   justify-content: space-evenly;
-  width: 100%;
   padding: 30px 0 50px 0;
+  margin: 30px;
 }
 .skills div {
   background-color: #222e36;
   border-radius: 3vw;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-  width: 40%;
+  width: 300px;
 }
 .skills h4 {
   padding: 3vw 0;
@@ -368,13 +378,15 @@ img[src*="icon"] {
   border-radius: 3vw 3vw 0 0;
 }
 .skills ul {
+  font-family: "Roboto", sans-serif;
   list-style: none;
   padding: 0;
 }
 .skills ul li {
   padding: 10px;
 }
-.skills ul li a {
+.skills ul span a {
+  font-size: 2.5vw;
   color: #20b2aa;
   text-decoration: none;
 }
@@ -435,6 +447,7 @@ img[src*="icon"] {
   transition: all 0.3s ease-in-out;
 }
 .info {
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   color: #20b2aa;
 }
@@ -466,9 +479,13 @@ img[src*="icon"] {
   position: absolute;
   bottom: -2px;
 }
+.have-question {
+  font-family: "Roboto", sans-serif;
+}
 #contact span {
+  font-family: "Roboto", sans-serif;
   color: #20b2aa;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: bolder;
 }
 #contact form {
@@ -505,19 +522,30 @@ img[src*="icon"] {
   color: #d3d3d3;
 }
 .footer {
-  padding: 0 35px 35px 35px;
+  font-family: "Roboto", sans-serif;
+  padding: 35px;
   font-size: 3vw;
 }
 .link-holder {
-  padding: 20px;
+  padding: 2px;
+  margin: 0 12px 0 12px;
 }
 .link-holder svg {
-  margin: 10px;
-  transition: all 0.2s ease-in-out;
+  margin: 13px;
+  transition: all 0.1s ease-in-out;
 }
 .link-holder svg:hover {
   cursor: pointer;
 }
+@media only screen and (min-width: 500px) {
+  #about p {
+    font-size: 17.5px;
+  }
+  #about p {
+    width: 425px;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   #home button,
   .form-btn {
@@ -544,33 +572,21 @@ img[src*="icon"] {
   .sub-text-greeting {
     font-size: 18px;
   }
-  .desk {
-    justify-content: flex-start;
-  }
-  .nav {
-    height: 0;
-  }
-  .nav-icon span {
-    display: none;
-  }
-  .desk ul {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
   .desk ul li {
     padding: 0 30px;
   }
   .about-content {
     font-size: 21px;
   }
-  img[src*="icon"] {
-    height: 160px;
-    width: 160px;
+  .me {
+    margin: 0 10px;
   }
-  #about p {
-    width: 510px;
+  .me-pic {
+    height: 300px;
+    width: 300px;
+  }
+  .skills ul span a {
+    font-size: 15px;
   }
   .rref-calculator {
     background-image: url(../img/rref.webp);
@@ -585,12 +601,13 @@ img[src*="icon"] {
     font-size: 15px;
   }
   #contact span {
-    font-size: 24px;
+    font-size: 18px;
   }
   .alert {
     font-size: 18px;
   }
   form * {
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
   }
   #contact form textarea {
@@ -607,9 +624,21 @@ img[src*="icon"] {
   h3 {
     font-size: 46.08px;
   }
-  img[src*="icon"] {
-    height: 180px;
-    width: 180px;
+  .desk {
+    justify-content: space-between;
+  }
+  .nav {
+    height: 0;
+  }
+  .nav-icon {
+    display: none;
+  }
+
+  .desk ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
   .T-logo {
     display: block;
@@ -618,11 +647,7 @@ img[src*="icon"] {
     top: 150px;
     right: 0px;
   }
-  .skills {
-    justify-content: space-around;
-    width: 768px;
-    margin: 50px 0;
-  }
+
   .skills div {
     border-radius: 23.04px;
   }
@@ -668,18 +693,15 @@ img[src*="icon"] {
     bottom: -350px;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .about-content {
     padding-bottom: 50px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
   .me {
     padding: 30px;
-  }
-  img[src*="icon"] {
-    height: 250px;
-    width: 250px;
   }
   .project-header {
     font-size: 32px;
